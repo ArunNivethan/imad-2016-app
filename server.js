@@ -12,10 +12,10 @@ app.get('/article_one', function (req, res) {
   res.send('Article one request and will be server ');
 });
 app.get('/article_two', function (req, res) {
-  res.send('Article one request and will be server ');
+  res.send('Article two request and will be server ');
 });
 app.get('/article_three', function (req, res) {
-  res.send('Article one request and will be server ');
+  res.send('Article three request and will be server ');
 });
 
 app.get('/ui/style.css', function (req, res) {
