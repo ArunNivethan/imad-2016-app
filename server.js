@@ -61,7 +61,7 @@ function createhtml(data)
    var heading=data.heading;
    var date=data.date;
    var content=data.content;
-var article_temp=`<html>
+var articletemp=`<html>
     <head>
         <title>
            ${title}
@@ -87,7 +87,7 @@ var article_temp=`<html>
     </boby>
 </html>
 `;
-return article_temp;
+return articletemp;
 }
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
