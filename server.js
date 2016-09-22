@@ -23,7 +23,7 @@ var articleOne={
 };
 function createhtml(data)
 {
-    var title=data.title;
+   var title=data.title;
    var heading=data.heading;
    var date=data.date;
    var content=data.content;
@@ -59,7 +59,7 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 app.get('/article_one', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'article_one.html'));
+  res.send(createhtml(articleOne));
 });
 app.get('/article_two/article_two', function (req, res) {
    res.sendFile(path.join(__dirname, 'ui', 'article_two.html'));
