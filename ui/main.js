@@ -3,7 +3,7 @@ var element = document.getElementById('main-text');
 element.innerHTML="arun";
 //going to move image
 var img=document.getElementById('ar');
- img.onlick=function()
+ img.onclick=function()
 {
  img.style.marginLeft ='100px';   
 };
