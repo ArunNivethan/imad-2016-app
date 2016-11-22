@@ -121,8 +121,10 @@ app.get('/counter', function (req, res) {
   res.send(counter.toString());
 });
 
-app.get('/:articleName', function (req, res) {
+app.get('/article/:articleName', function (req, res) {
     var articleName=req.params.articleName;
+    
+  pool.query('SELECT * FROM article WHERE title=kulambu powder');
   res.send(createhtml(articles[articleName]));
 });
 app.get('/ui/style.css', function (req, res) {
